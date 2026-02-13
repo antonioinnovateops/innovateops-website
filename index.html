@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateOps Limited | Embedded Systems & DevOps Consulting</title>
+    <meta name="description" content="Expert embedded systems development, DevOps consulting, and safety-critical software services. Serving Australia, New Zealand, and worldwide.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: { 50: '#f0f9ff', 100: '#e0f2fe', 500: '#0ea5e9', 600: '#0284c7', 700: '#0369a1', 800: '#075985', 900: '#0c4a6e' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #0c4a6e 0%, #0369a1 50%, #0ea5e9 100%); }
+        .pattern-bg { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-brand-700">Innovate</span><span class="text-2xl font-bold text-gray-900">Ops</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-brand-600 transition">Services</a>
+                    <a href="#expertise" class="text-gray-600 hover:text-brand-600 transition">Expertise</a>
+                    <a href="#about" class="text-gray-600 hover:text-brand-600 transition">About</a>
+                    <a href="#contact" class="bg-brand-600 text-white px-5 py-2 rounded-lg hover:bg-brand-700 transition">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg pattern-bg pt-32 pb-20 md:pt-40 md:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+                    Engineering Excellence<br>for Critical Systems
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto">
+                    Embedded systems, DevOps automation, and safety-critical software development. 
+                    17+ years of delivering robust solutions for automotive, aerospace, and industrial clients.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-brand-700 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition text-lg">
+                        Start a Project
+                    </a>
+                    <a href="#services" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition text-lg">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What We Do</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">End-to-end engineering services from concept to production</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Embedded Systems</h3>
+                    <p class="text-gray-600">Firmware development for STM32, ARM Cortex, and custom microcontrollers. Bootloaders, OTA updates, and secure boot implementations.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">DevOps & CI/CD</h3>
+                    <p class="text-gray-600">Build automation, continuous integration pipelines, Docker containerization, and infrastructure as code. Jenkins, GitHub Actions, GitLab CI.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Safety-Critical Software</h3>
+                    <p class="text-gray-600">ASPICE, ISO 26262, DO-178C, and IEC 61508 compliant development. Functional safety analysis, MISRA C, and formal verification.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">AI Integration</h3>
+                    <p class="text-gray-600">AI-powered code review, automated testing, and intelligent documentation. Integrate AI agents into your software development lifecycle.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Software Architecture</h3>
+                    <p class="text-gray-600">System design, code review, and modernization of legacy systems. C, C++, Python, Rust, and modern toolchains.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition">
+                    <div class="w-14 h-14 bg-brand-100 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Testing & Validation</h3>
+                    <p class="text-gray-600">Unit testing, integration testing, hardware-in-the-loop (HIL), and automated test frameworks. Complete traceability from requirements to tests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Industry Expertise</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Deep experience across safety-critical industries</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🚗</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Automotive</h3>
+                    <p class="text-gray-600 text-sm">ADAS, ECU development, ISO 26262, ASPICE</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">✈️</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Aerospace</h3>
+                    <p class="text-gray-600 text-sm">DO-178C, avionics, flight control systems</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🏭</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Industrial</h3>
+                    <p class="text-gray-600 text-sm">IEC 61508, PLCs, process control</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="text-5xl mb-4">🏥</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Medical</h3>
+                    <p class="text-gray-600 text-sm">IEC 62304, FDA compliance, medical devices</p>
+                </div>
+            </div>
+            <!-- Tech Stack -->
+            <div class="mt-16 pt-16 border-t border-gray-200">
+                <h3 class="text-center text-lg font-semibold text-gray-500 mb-8">TECHNOLOGIES WE WORK WITH</h3>
+                <div class="flex flex-wrap justify-center gap-4 text-gray-600">
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">C/C++</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">Python</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">Rust</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">STM32</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">ARM Cortex</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">Docker</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">Kubernetes</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">Jenkins</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">GitHub Actions</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">Terraform</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">CMake</span>
+                    <span class="px-4 py-2 bg-gray-100 rounded-full">MISRA C</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About InnovateOps</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        InnovateOps Limited is an engineering consultancy specializing in embedded systems, DevOps, 
+                        and safety-critical software development. With over 17 years of industry experience, 
+                        we help companies build reliable, compliant, and maintainable software systems.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Based in New Zealand and expanding into Australia, we serve clients across the Asia-Pacific 
+                        region and worldwide. Our expertise spans automotive, aerospace, industrial, and medical 
+                        device sectors.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div>
+                            <div class="text-4xl font-bold text-brand-600">17+</div>
+                            <div class="text-gray-600">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-4xl font-bold text-brand-600">50+</div>
+                            <div class="text-gray-600">Projects Delivered</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Why Choose Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-600">Deep expertise in safety-critical standards (ASPICE, ISO 26262, DO-178C)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-600">End-to-end delivery from architecture to deployment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-600">Modern AI-augmented development practices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-600">Flexible engagement: consulting, contracting, or project-based</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-gray-600">Remote-first, serving clients in ANZ and worldwide</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg pattern-bg">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Let's Build Something Great</h2>
+            <p class="text-xl text-blue-100 mb-10">
+                Ready to discuss your project? Get in touch and let's explore how we can help.
+            </p>
+            <div class="bg-white rounded-xl p-8 shadow-xl">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-brand-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:contact@innovateops.net" class="text-brand-600 hover:underline">contact@innovateops.net</a>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-brand-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <span class="text-gray-600">New Zealand & Australia</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="w-6 h-6 text-brand-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                                </svg>
+                                <span class="text-gray-600">Serving clients worldwide</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-lg font-bold text-gray-900 mb-4">Connect With Us</h3>
+                        <p class="text-gray-600 mb-6">
+                            Whether you need a full project team or specialized expertise, we're here to help.
+                        </p>
+                        <a href="mailto:contact@innovateops.net" class="inline-block bg-brand-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-700 transition">
+                            Send an Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-xl font-bold text-white">Innovate</span><span class="text-xl font-bold text-brand-500">Ops</span>
+                    <span class="text-sm ml-2">Limited</span>
+                </div>
+                <div class="text-sm">
+                    © 2025 InnovateOps Limited. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
