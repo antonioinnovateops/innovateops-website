@@ -418,9 +418,9 @@
                 </div>
             </div>
             
-            <!-- Stats Row - Centered, aligned -->
-            <div class="mt-16 py-8 border-t border-b border-white/10">
-                <div class="flex justify-center items-center gap-8 md:gap-16 lg:gap-24">
+            <!-- Stats Row - Centered on page -->
+            <div class="mt-16 py-8 border-t border-b border-white/10 w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+                <div class="flex justify-center items-center gap-8 md:gap-16 lg:gap-24 px-6">
                     <div class="text-center">
                         <div class="text-4xl lg:text-5xl font-bold gradient-text mb-2">10x</div>
                         <div class="text-gray-400 text-sm">Faster Code Reviews</div>
@@ -457,7 +457,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-white">Domain Expertise</h2>
             </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
                 <!-- Automotive -->
                 <div class="group relative overflow-hidden rounded-xl card-glow border border-white/5">
                     <img 
@@ -472,7 +472,6 @@
                         <div class="flex flex-wrap gap-2">
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">ISO 26262</span>
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">ASPICE</span>
-                            <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">CAN/LIN</span>
                         </div>
                     </div>
                 </div>
@@ -487,11 +486,28 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <h3 class="text-xl font-bold text-white mb-2">Aerospace & Defense</h3>
-                        <p class="text-gray-300 text-sm mb-3">Avionics software, DO-178C certification, flight control systems, drone technology</p>
+                        <p class="text-gray-300 text-sm mb-3">Avionics software, DO-178C certification, flight control systems</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">DO-178C</span>
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">DAL-A/B</span>
-                            <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">ARINC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI & Machine Learning - CENTER POSITION -->
+                <div class="group relative overflow-hidden rounded-xl card-glow border border-brand-orange/30">
+                    <img 
+                        src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&q=80" 
+                        alt="AI and Machine Learning neural network visualization"
+                        class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/70 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">AI & Machine Learning</h3>
+                        <p class="text-gray-300 text-sm mb-3">AI-augmented workflows, intelligent code review, ML model deployment</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">LLM</span>
+                            <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">MLOps</span>
                         </div>
                     </div>
                 </div>
@@ -506,11 +522,10 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <h3 class="text-xl font-bold text-white mb-2">Industrial Automation</h3>
-                        <p class="text-gray-300 text-sm mb-3">PLC programming, SCADA systems, IEC 61508 functional safety, industrial IoT</p>
+                        <p class="text-gray-300 text-sm mb-3">PLC programming, SCADA systems, IEC 61508 functional safety</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">IEC 61508</span>
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">SIL 3</span>
-                            <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">Modbus</span>
                         </div>
                     </div>
                 </div>
@@ -525,33 +540,10 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/60 to-transparent"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-6">
                         <h3 class="text-xl font-bold text-white mb-2">Medical Devices</h3>
-                        <p class="text-gray-300 text-sm mb-3">IEC 62304 compliant software, FDA 510(k) submissions, medical device firmware</p>
+                        <p class="text-gray-300 text-sm mb-3">IEC 62304 compliant software, FDA 510(k) submissions</p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">IEC 62304</span>
                             <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">FDA</span>
-                            <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">Class C</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- AI & Machine Learning - centered with image -->
-                <div class="md:col-span-2 lg:col-span-3 xl:col-span-4 2xl:col-span-5 flex justify-center">
-                    <div class="group relative overflow-hidden rounded-xl card-glow border border-brand-orange/30 w-full max-w-2xl">
-                        <img 
-                            src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop&q=80" 
-                            alt="AI and Machine Learning neural network visualization"
-                            class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
-                        >
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-darker via-brand-darker/70 to-transparent"></div>
-                        <div class="absolute bottom-0 left-0 right-0 p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">AI & Machine Learning</h3>
-                            <p class="text-gray-300 text-sm mb-3">AI-augmented development workflows, intelligent code review, automated testing, and ML model deployment for safety-critical systems.</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">LLM Integration</span>
-                                <span class="px-2 py-1 bg-brand-orange/20 text-brand-orange text-xs rounded">Code Agents</span>
-                                <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">ML Pipelines</span>
-                                <span class="px-2 py-1 bg-purple-500/20 text-purple-400 text-xs rounded">Edge AI</span>
-                            </div>
                         </div>
                     </div>
                 </div>
