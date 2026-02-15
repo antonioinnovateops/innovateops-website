@@ -70,11 +70,11 @@
         ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #F57C00; }
         
-        /* Logo responsive sizing */
-        .header-logo { height: 2.5rem; }
+        /* Logo responsive sizing - maintain aspect ratio */
+        .header-logo { height: 2.5rem; width: auto; }
         @media (min-width: 768px) { .header-logo { height: 3rem; } }
         @media (min-width: 1024px) { .header-logo { height: 3.5rem; } }
-        .footer-logo { height: 2.5rem; }
+        .footer-logo { height: 2.5rem; width: auto; }
         @media (min-width: 768px) { .footer-logo { height: 3rem; } }
     </style>
 </head>
